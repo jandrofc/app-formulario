@@ -1,0 +1,7 @@
+{
+  "name": "app-formulario",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
