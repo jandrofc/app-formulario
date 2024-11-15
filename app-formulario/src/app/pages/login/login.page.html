@@ -1,9 +1,27 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-title>Iniciar Sesión</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content class="ion-padding">
+  <div class="login">
+  <form >
+    <!-- Campo de Email -->
+    <ion-item>
+      <ion-label position="floating">Correo Electrónico</ion-label>
+      <ion-input type="email" name="email" required></ion-input>
+    </ion-item>
 
+    <!-- Campo de Contraseña -->
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password"  name="password" required></ion-input>
+    </ion-item>
+
+    <!-- Botón de Ingresar -->
+    <ion-button expand="full" type="submit" color="primary">Ingresar</ion-button>
+  </form>
+  </div>
 </ion-content>
+
