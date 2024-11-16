@@ -22,6 +22,7 @@ export class FirestoreService {
   async getUser(uid: string){
     const userDocRef = doc(this.firestore,`users/${uid}`);
     const userDoc = await getDoc(userDocRef);
+    return userDoc.exists() ? userDoc.data() : null;
   }
 
 }
